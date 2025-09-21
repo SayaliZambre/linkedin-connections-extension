@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Connections Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { width: 350px; height: 400px; }
+    </style>
+</head>
+<body class="bg-gray-50 p-4">
+    <div class="text-center">
+        <h1 class="text-xl font-bold text-gray-800 mb-4">LinkedIn Connections</h1>
+        <button id="openDashboard" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+            Open Dashboard
+        </button>
+        <div id="status" class="mt-4 text-sm text-gray-600"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

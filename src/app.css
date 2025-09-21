@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: 0 0% 3.9%;
+  --color-foreground: 0 0% 98%;
+  --color-card: 0 0% 3.9%;
+  --color-card-foreground: 0 0% 98%;
+  --color-popover: 0 0% 3.9%;
+  --color-popover-foreground: 0 0% 98%;
+  --color-primary: 221 83% 53%;
+  --color-primary-foreground: 210 40% 98%;
+  --color-secondary: 217 32% 17%;
+  --color-secondary-foreground: 210 40% 98%;
+  --color-muted: 217 32% 17%;
+  --color-muted-foreground: 215 20% 65%;
+  --color-accent: 217 32% 17%;
+  --color-accent-foreground: 210 40% 98%;
+  --color-destructive: 0 62% 30%;
+  --color-destructive-foreground: 210 40% 98%;
+  --color-border: 217 32% 17%;
+  --color-input: 217 32% 17%;
+  --color-ring: 221 83% 53%;
+  --radius: 0.5rem;
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: hsl(var(--color-background));
+  color: hsl(var(--color-foreground));
+  font-family: var(--font-sans);
+}
+
+.chart-line {
+  stroke: hsl(var(--color-primary));
+  stroke-width: 2;
+  fill: none;
+}
+
+.chart-area {
+  fill: hsl(var(--color-primary) / 0.1);
+}
